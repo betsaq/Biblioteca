@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/index.css">
+
+        <title>MODIFICAR AUTOR</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <div>
+            <form class="formulario" th:action="@{/autor/modificar/__${autor.id}__}" method="POST"> 
+                <!-- __${variaableDePreProcesamiento}__ le indican al controlador que se debe
+                evaluar esa expresión antes de evaluar la expresión completa. Así estamos enviando nuestra
+                variable en un path de la url-->
+
+                <input hidden th:value="${id}" name="id"> 
+                <!-- con el modificador hidden ocultamos el parámetro id ya que no nos interesa modificarlo 
+                pero es necesario para la validacion por parte del controlador-->
+                <div>
+                    <label>Modificar Autor</label>
+                    <input th:value="${autor.nombre}" type="text" name="nombre">
+                </div>
+                <button type="submit">Actualizar</button>
+            </form>
+        </div>
+    </body>
+</html>

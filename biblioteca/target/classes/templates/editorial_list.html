@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+        <link rel="stylesheet" href="/css/index.css">
+            <title>Lista Editoriales</title>
+            <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                    </head>
+                    <body>
+                        <div>
+                            <table class="formulario">
+                                <thead>
+                                    <th scope="col">Id de la Editorial</th>
+                                    <th scope="col">Nombre de la Editorial</th>
+                                </thead>
+                                <tbody th:each="editorial : ${editoriales}">
+                                    <tr>
+                                        <th scope="row" th:text="${editorial.id}"></th>
+                                        <td th:text="${editorial.nombre}"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </body>
+                    </html>

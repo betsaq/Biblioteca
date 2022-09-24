@@ -1,0 +1,89 @@
+
+body{
+
+    background-image: url("libro.jpeg");
+    background-size: cover;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+.formulario {
+
+    margin: 0 auto;
+    width: 300PX;
+    /* Esquema del formulario */
+    padding: 1em;
+    border: 1px solid #ff0066;
+    border-radius: 2em;
+    border-width: medium;
+
+    background: black;
+    align-items: flex-start;
+    align-content: center;
+
+    /*texto de la caja*/
+    font-family: inherit;
+    font-family: cambria;
+    font-size: 24px;
+    color:#ffffff;
+}
+
+
+
+.mensajeExito{
+    width: 20%;
+    margin: auto;
+    text-align: center;
+}
+
+.mensajeError{
+    width: 20%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+.card {
+
+}
+
+.card-body {
+
+}
+
+.card-title {
+
+}
+
+.card-text {
+
+}
+
+.text-white {
+
+}
+
+.bg-danger {
+
+}
+
+.mb-3 {
+
+}
+
+
+
+
+
+.opciones {
+ align-content: center;
+
+
+}
